@@ -23,7 +23,7 @@ void textColor(WORD color); // hàm chỉnh màu
 string passwordInput(unsigned maxLength); // hàm mã hóa mật khẩu 
 //ADMIN
 void docFile_ADMIN(list <Admin> &L); // đọc từ file admin 
-void login_Admin(list <Admin> L, list <Sach> L3, list <BanDoc*> L2, list <PhieuMuon> L4); // đăng nhập 
+void login_Admin(list <Admin> L, list <Sach> L3, list <BanDoc*> L2, list <PhieuMuon> L4); /
 //BẠN ĐỌC
 void docFile_BANDOC(list <BanDoc*> &L2); // đọc từ file bạn đọc 
 void output_BANDOC(list <BanDoc*> L2); // xuất ra màn hình 
@@ -378,7 +378,7 @@ void themBanDoc(list <BanDoc*> &L2) // hàm thêm bạn đọc
 			system("pause");
 			break;
 		}
-		else if (nLoaiBD == 2) // thêm bạn đọc là sinh viên
+		else if (nLoaiBD == 2)
 		{
 			nLoaiBD = 2;
 			string str;
@@ -660,7 +660,7 @@ void output_SACH(list <Sach> L3)  // xuất ra màn hình
 		p++;
 	}
 }
-void docFile_SACH(list <Sach> &L3) // đọc từ file sách 
+void docFile_SACH(list <Sach> &L3) 
 {
 	string sMS = "";
 	string sTD = "";
